@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Showcasing my projects, experience, and skills in AI/ML, Full Stack Development, and Algorithms">
+    <meta name="author" content="Your Name">
+    
+    <title>My Portfolio - Developer & Problem Solver</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="assets/Prakruthi Koteshwar Resume.pdf" download>
+                         <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="name">Your Name</span></h1>
+                <p>A passionate developer and problem-solver crafting elegant solutions across AI/ML, full-stack development, cloud computing and algorithmic challenges.</p>
+                <a href="#resume" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior Developer</h3>
+                        <div class="company">Tech Company Inc.</div>
+                        <div class="duration">Jan 2023 - Present</div>
+                        <ul>
+                            <li>Led development of microservices architecture serving 100K+ users</li>
+                            <li>Implemented ML model optimization reducing inference time by 40%</li>
+                            <li>Mentored junior developers and conducted code reviews</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Full Stack Engineer</h3>
+                        <div class="company">StartUp Solutions</div>
+                        <div class="duration">June 2021 - Dec 2022</div>
+                        <ul>
+                            <li>Built full-stack web application using React and Node.js</li>
+                            <li>Designed and implemented RESTful API with 99.9% uptime</li>
+                            <li>Optimized database queries improving page load time by 60%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <div class="company">Digital Agency Pro</div>
+                        <div class="duration">Jan 2020 - May 2021</div>
+                        <ul>
+                            <li>Developed and maintained client websites and web applications</li>
+                            <li>Implemented responsive designs for mobile and desktop</li>
+                            <li>Collaborated with design team to improve user experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <div class="company">Web Development Studio</div>
+                        <div class="duration">June 2019 - Dec 2019</div>
+                        <ul>
+                            <li>Learned modern web development practices and technologies</li>
+                            <li>Fixed bugs and implemented features under senior developers' guidance</li>
+                            <li>Participated in agile development cycle and sprint planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            
+            <!-- Project Navigation Bar -->
+            <nav class="project-nav">
+                <button class="project-nav-btn active" data-category="project-ml">
+                    <i class="fa-solid fa-robot"></i>
+                    AI & ML
+                </button>
+                <button class="project-nav-btn" data-category="project-fullstack">
+                    <i class="fa-solid fa-layer-group"></i>
+                    Full Stack
+                </button>
+                <button class="project-nav-btn" data-category="project-algorithms">
+                    <i class="fa-solid fa-gears"></i>
+                    Algorithms
+                </button>
+            </nav>
+
+            <div class="project-categories">
+                <!-- AI + ML Category -->
+                <div class="category active" id="project-ml">
+                    <h3 class="category-title">
+                         <i class="fa-solid fa-robot"></i>
+                        AI & Machine Learning
+                    </h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Image Classification Model</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Developed a CNN-based image classifier achieving 96% accuracy on custom dataset. Used data augmentation and transfer learning techniques with ResNet50.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">CNN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>NLP Sentiment Analysis</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Built NLP pipeline for sentiment analysis using transformer models. Analyzed 50K+ tweets with F1-score of 0.89 on validation set.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">BERT</span>
+                                    <span class="tech-tag">NLP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Predictive Analytics Engine</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Created time-series forecasting model for stock price prediction. Implemented LSTM networks with 92% directional accuracy.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">LSTM</span>
+                                    <span class="tech-tag">Pandas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Stack Category -->
+                <div class="category hidden" id="project-fullstack">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Full Stack Development
+                    </h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>E-Commerce Platform</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Built complete e-commerce platform with product catalog, shopping cart, and payment integration. Served 5K+ monthly users.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Task Management App</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Created collaborative task management system with real-time updates using WebSocket. Features include team workspaces and notifications.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Blog Platform</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Developed full-stack blogging platform with markdown editor, user authentication, and SEO optimization. Implements lazy loading for performance.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Algorithms & Logic Category -->
+                <div class="category hidden" id="project-algorithms">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-gears"></i>
+                        Logic & Programming
+                    </h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Tower of Hanoi Solver</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Implemented recursive algorithm to solve Tower of Hanoi puzzle. Visualizes move sequences and calculates optimal solution count (2^n - 1).</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Recursion</span>
+                                    <span class="tech-tag">Visualization</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Dijkstra's Shortest Path</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Created interactive simulation of Dijkstra's algorithm for finding shortest paths in weighted graphs. Includes step-by-step visualization and performance metrics.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Graphs</span>
+                                    <span class="tech-tag">Algorithms</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Data Structure Implementations</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">Implemented custom data structures including AVL trees, hash tables, and priority queues. Includes complexity analysis and benchmarking.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">DSA</span>
+                                    <span class="tech-tag">Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <!-- Resume Section -->
+        <section id="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-grid">
+                <div class="resume-item">
+                    <h3>Education</h3>
+                    <p><strong>Degree Name</strong></p>
+                    <p>University Name</p>
+                    <p>Graduation: Year</p>
+                    <p style="color: var(--dark-light); font-size: 0.9rem;">GPA: 3.8/4.0</p>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Skills</h3>
+                    <p><strong>Languages:</strong></p>
+                    <div>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                    <p style="margin-top: 1rem;"><strong>Tools & Frameworks:</strong></p>
+                    <div>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Certifications</h3>
+                    <p><strong>Google Cloud Professional</strong></p>
+                    <p>Issued: Month Year</p>
+                    <p style="color: var(--dark-light); font-size: 0.9rem;">Machine Learning Specialization</p>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Languages</h3>
+                    <p><strong>English:</strong> Fluent</p>
+                    <p><strong>Spanish:</strong> Intermediate</p>
+                    <p><strong>Other Language:</strong> Basic</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved. | Designed with passion</p>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
