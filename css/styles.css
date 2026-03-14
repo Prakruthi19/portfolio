@@ -160,7 +160,7 @@ section {
    ======================================== */
 
 #hero {
-    min-height: 90vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     padding: 6rem 2rem 4rem;
@@ -289,7 +289,7 @@ section {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(180deg, transparent 0%, var(--highlight) 20%, var(--highlight) 80%, transparent 100%);
+    
 }
 
 .timeline-item {
@@ -310,7 +310,6 @@ section {
     padding: 2rem;
     border-radius: var(--border-radius);
     backdrop-filter: blur(10px);
-    margin-left: 5%;
     position: relative;
     transition: var(--transition);
 }
