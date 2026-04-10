@@ -218,47 +218,57 @@ document.addEventListener('DOMContentLoaded', () => {
     // Get all project categories
     const categories = document.querySelectorAll('.category');
 
+    if (!navButtons.length || !categories.length) {
+        return;
+    }
+
+    const showCategory = (categoryId, buttonToActivate) => {
+        navButtons.forEach(btn => btn.classList.remove('active'));
+        categories.forEach(cat => {
+            cat.classList.remove('active');
+            cat.classList.add('hidden');
+        });
+
+        if (buttonToActivate) {
+            buttonToActivate.classList.add('active');
+        }
+
+        const targetElement = document.getElementById(categoryId);
+        if (targetElement) {
+            targetElement.classList.remove('hidden');
+            targetElement.classList.add('active');
+
+            // Hidden tabs can keep cards at opacity 0 from initial observer setup.
+            // Force cards visible when a category becomes active.
+            targetElement.querySelectorAll('.project-card').forEach(card => {
+                card.style.opacity = '1';
+                card.style.animation = 'fadeInUp 0.6s ease forwards';
+            });
+        }
+    };
+
     // Add click event listener to each button
     navButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Get the category ID from button's data-category attribute
             const targetCategory = button.getAttribute('data-category');
+            showCategory(targetCategory, button);
 
-            // Remove 'active' class from all buttons
-            navButtons.forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Remove 'active' class and add 'hidden' to all categories
-            categories.forEach(cat => {
-                cat.classList.remove('active');
-                cat.classList.add('hidden');
-            });
-
-            // Add 'active' class to clicked button
-            button.classList.add('active');
-
-            // Show the target category by removing 'hidden' and adding 'active'
+            // Optional: Smooth scroll to category (uncomment if needed)
             const targetElement = document.getElementById(targetCategory);
-            if (targetElement) {
-                targetElement.classList.remove('hidden');
-                targetElement.classList.add('active');
-                
-                // Optional: Smooth scroll to category (uncomment if needed)
-                // setTimeout(() => {
-                //     targetElement.scrollIntoView({ 
-                //         behavior: 'smooth', 
-                //         block: 'nearest' 
-                //     });
-                // }, 100);
-            }
+            // if (targetElement) {
+            //     setTimeout(() => {
+            //         targetElement.scrollIntoView({ 
+            //             behavior: 'smooth', 
+            //             block: 'nearest' 
+            //         });
+            //     }, 100);
+            // }
         });
     });
 
-    // Set first button as active by default on page load
-    if (navButtons.length > 0) {
-        navButtons[0].click();
-    }
+    // Set first category as active on page load
+    const firstBtn = navButtons[0];
+    showCategory(firstBtn.getAttribute('data-category'), firstBtn);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
